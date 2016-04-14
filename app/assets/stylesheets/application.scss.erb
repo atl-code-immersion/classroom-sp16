@@ -1,0 +1,52 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+.container {
+	background: rgba(255,255,255,0.8);
+	border-radius: 10px;
+}
+
+.navbar {
+	margin-bottom: 0px;
+}
+
+#home {
+	background: url(<%= asset_path "books.jpeg" %>) no-repeat center center fixed;
+	background-size: cover;
+}
+
+#pets {
+	background: url(<%= asset_path "pets.jpeg" %>) no-repeat center center fixed;
+	background-size: cover;
+}
+
+#students {
+	background: url(<%= asset_path "students.jpeg" %>) no-repeat center center fixed;
+	background-size: cover;
+}
+
+#teachers {
+	background: url(<%= asset_path "teachers.jpeg" %>) no-repeat center center fixed;
+	background-size: cover;
+}
+
+.center-it {
+	text-align: center;
+}
+
